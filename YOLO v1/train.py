@@ -80,9 +80,9 @@ def main():
         label_dir=LABEL_DIR,
     )
 
-    # test_dataset = VOCDataset(
-    #     "data/test.csv", transform=transform, img_dir=IMG_DIR, label_dir=LABEL_DIR,
-    # )
+    test_dataset = VOCDataset(
+        "data/test.csv", transform=transform, img_dir=IMG_DIR, label_dir=LABEL_DIR,
+    )
 
     train_loader = DataLoader(
         dataset=train_dataset,
